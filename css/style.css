@@ -1,0 +1,111 @@
+*{box-sizing: border-box;}
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83.33%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+
+[class*='col-']{
+    float: left;
+    border: 1px solid greenyellow;
+}
+
+.row:after{
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+.wrapper{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.header-height{ height: 200px}
+.menu-height{ height: 50px}
+.content-height{ height: 600px}
+.big-footer-height{ height: 250px}
+.footer-height{ height: 40px}
+
+.main-ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.main-ul li{
+    float: left;
+    width: 120px;
+    border: 1px solid gray;
+
+}
+.main-ul li a{
+    border: 1px solid;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    height: 47px;
+    padding-top: 15px;
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.main-ul li a:hover{
+    background-color: white;
+    color: black;
+
+}
+             /*Zooming by Hover & Animation*/
+.div-one {
+    height: 200px;
+    width: 400px;
+    transform: rotate(0deg);
+    /*background-color: indianred;*/
+    /*background-color: bisque;*/
+    /*background: linear-gradient(to bottom, indianred,red,bisque);*/
+    margin: 50px 0 0 50px;
+    float: left;
+    animation: design;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /*rotation: 180deg;*/
+
+    /*transform: scale(.5);*/
+    /*transform: rotateY(0deg);*/
+    /*transition: 1s;*/
+}
+.div-one:hover{
+    /*transform: scale(1.5);*/
+    /*background: linear-gradient(to left, indianred,red,indianred);*/
+    /*transform: rotateY(90deg);*/
+
+}
+@keyframes design {
+    0%{background:url("../images/image1.gif");   }
+    25%{background:url("../images/image2.gif");   }
+    50%{background: url("../images/image3.gif");}
+    75%{background: url("../images/image4.gif");  }
+    100%{background: url("../images/image5.gif");}
+
+}
+            /*Creating Letters*/
+/*}*/
+/*.div-two{*/
+/*    height: 200px;*/
+/*    width: 200px;*/
+/*    background-color: red;*/
+/*    border-radius: 10%;*/
+/*    margin: 50px 0 0 100px;*/
+/*    transform: skew(30deg);*/
+/*    float: left;*/
+/*}*/
